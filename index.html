@@ -1,234 +1,780 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Yash Shah</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Yash Shah</span>
-                <span class="d-none d-lg-block"><img class="img-fluid  rounded-circle mx-auto mb-2" src="assets/img/yashpic.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                </ul>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Yash Shah | Software Developer</title>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yash Shah | Software Developer" />
+  <meta property="og:description" content="Software Developer" />
+  <meta property="og:url" content="https://yashshah97.github.io/" />
+  <meta property="og:site_name" content="Yash Shah | Software Developer" />
+  <meta property="article:publisher" content="https://yashshah97.github.io/" />
+
+  <meta name="author" content="Yash Shah" />
+  <meta name="description"
+    content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/yashpicnew.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+
+        <a aria-label="Navigate to the Certification section" href="#Certification"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assignment-turned-in small"></i><span>Certification</span></a>
+      </li>
+
+      <li class="bold">
+
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+
+        <a aria-label="Open Yash's resume in a new tab" href="#" onClick="alert('Please connect with me on Linkedin')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Yash
+        Shah</a><span class="black-text">Software Developer</span>
+    </div>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#Certification"
+          class="waves-effect waves-dark teal-text"><i class="mdi-content-mail small"></i><span>Certification</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Yash's Resume in a new tab" href="" target="_blank"
+          onClick="alert('Please connect with me on Linkedin')" class="waves-effect waves-dark teal-text"><i
+            class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal typing2"></span></h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and
+                challenging real-world problems.</h5>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Yash
-                        <span class="text-primary">Shah</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        7575 Estate on Frankford, Richardson, Dallas, Texas 75252 ·
-                        <a href="mailto:yashnshah97@email.com">yashnshah97@email.com</a>
-                    </div>
-                    <p class="lead mb-5">To attain a challenging position in development field of innovative computer applications, where my skills in analysis, designing and implementation of various applications will showcase my commitment in building strong relationships with staff & Customer.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://in.linkedin.com/in/shahyash97"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/Yashshah97"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/professorfuero/"><i class="fab fa-instagram"></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/yashnshah22/"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">HSBC</div>
-                            <pre>• Created APIs for client’s invoices using Spring boot and configured Flask APIs for automation on GCP.
-• Deployed APIs on GCP (Google Cloud Platform) with Jenkins build.
-• Prepared fully automation testing for APIs with some framework like Cucumber, Selenium and Tosca tool.</pre>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jan 2020 - Aug 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Trainee Software Engineer</h3>
-                            <div class="subheading mb-3">HSBC</div>
-                            <pre>• Created platform to verify documents with Digital Ledger system.
-• Implemented Classification Machine Learning algorithms and models extracting data from documents.
-• Built python script to verify the details</pre>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2019 - Dec 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer Intern</h3>
-                            <div class="subheading mb-3">Softwan Ltd.</div>
-                            <pre>• Developed REST APIs for admin as well as for user using Spring boot with adding security using Hibernate.
-• Created highly responsive UI pages using React JS, Ajax and other java frameworks.
-• Worked on the AWS services like RDS, EC2 for deploying the application on cloud.</pre>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Dec 2018 - May 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer Intern</h3>
-                            <div class="subheading mb-3">iCreative Technologies</div>
-                            <pre>• Developed web services using CSS, JavaScript and Django framework.
-• Implemented Classification Machine Learning algorithms and models for predicting data.
-• Built University Finder features using MySQL and Python.</pre>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2018 - July 2018</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Texas Dallas</h3>
-                            <div class="subheading mb-3">Masters</div>
-                            <div>Computer Science - Data Science Track</div>
-                            <p>Pursuing in Fall 2021</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">LDCE</h3>
-                            <div class="subheading mb-3">Information Technology</div>
-                            <p>8.67/10</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2015 - May 2019</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-jenkins"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li> 
-                        <li class="list-inline-item"><i class="fab fa-node"></i></li> 
-                        <li class="list-inline-item"><i class="fab fa-php"></i></li> 
-                        <li class="list-inline-item"><i class="fab fa-windows"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-ubuntu"></i></li> 
-                        <li class="list-inline-item"><i class="f fab fa-node"></i></li> 
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li> 
-                        <li class="list-inline-item"><i class="fab fa-google"></i></li>  
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Full stack developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                           Automation of script
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a Full stack developer, I enjoy most of my time being outdoors. I like to play different games and travelling. I have so much interest in photography. Apart from that I like to talk about space and science.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am entrepreneur. I like to give advice to people in which I have expertise. In addition, I spend a large amount of my free time exploring the latest technology advancements specially in Artificial Intelligence. </p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Cloud Platform - ASSOCIATE CLOUD ENGINEER
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                           PCAP Certifications- Python Certificate
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            11
-                            <sup>st</sup>
-                            Indian Engineering Olympiad (IEO) at national level
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            A
-                            <sup>+</sup>
-                            C language in C-DAC, GIST.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Pat on the back Award at HSBC.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                         Participation Certification in Hackacedmy - HSBC 2021
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                         Cerified in Secure Code Warrior- White, Yellow, Orange level.
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <div class="social">
+              <a href="http://linkedin.com/in/shahyash97" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Yashshah97/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+      </div>
+    </section>
+
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <blockquote>
+          <h2>
+            A Software Developer with a passion for Backend Development.
+
+          </h2>
+        </blockquote>
+        <p>
+          I am a Computer Science Grad Student at University of Texas at Dallas. I enjoy problem-solving and coding.
+          Always keen to learn any problem with all findings.
+
+          I have worked on different technologies: Java, Spring boot, Hibernate, Java Swing, JSP/Servlet, Python,
+          Django, Flask, MySQL, MongoDB, HTML5, CSS, JavaScript & framework like React & Angular, C++, C# , Some Cloud
+          technologies like GCP & AWS . I have 2 years of professional work experience & multiple internship experience
+          which helped me strengthen my skills and experties.
+
+          I am passionate about developing complex applications that solve real-world problems impacting millions of
+          users.
+        </p>
+        <p>
+        <ul>
+          <li><b>Languages:</b> Python, Java,, Go lang, JavaScript, C, C++, HTML/CSS, Bash, Blockchain</li>
+          <li><b>Databases:</b> MySQL, MongoDB</li>
+          <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
+          <li><b>Frameworks:</b> Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap</li>
+          <li><b>Tools & Technologies:</b> Git, Docker, AWS, GCP, Swagger, JIRA</li>
+        </ul>
+        </p>
+        <p>Looking for a Full time roles to excel my knowledge combining my past experience and skills in Software
+          Engineer, Testing & Automation, Security, Cloud technology which provides professional development,
+          interesting experiences and personal growth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.tesla.com/" target="_blank"><img alt="Tesla logo" src="/assets/img/Tesla_logo.png"
+                    class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.tesla.com/" target="_blank"
+                      class="teal-text hoverline">Tesla</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Software Engineer Intern</div>
+            <ul>
+              <li>
+                TechStack : Go, Angular, Python, Jenkins, MySQL, Jira
+              </li>
+              <li>
+                Integrated a full fledge Tesla feature library to upgrade the legacy system for retail sales.
+              </li>
+              <li>Configured products user interface using Angular framework and creating inventory microservices using
+                Go.</li>
+              <li>
+                <b>Tools:</b> Python, Flask, SQLYog, Jira, VS Code
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Sept 2022 - Jan 2023 | Palo Alto, California</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.apple.com/" target="_blank"><img alt="Apple logo" src="/assets/img/Apple-Logo.png"
+                    class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.apple.com/" target="_blank"
+                      class="teal-text hoverline">Apple</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">AI/ML Software Engineer Intern</div>
+            <ul>
+              <li>
+                TechStack : Flask, Go, React, Python, AWS
+              </li>
+              <li>
+                Implemented Infinite Scrolling, download, preview objects & Sharable URLs using AWS S3, Python flask
+                APIs & React.
+              </li>
+              <li>
+                Documented architecture, sequence/Flow diagrams, test plans & deployed all features to the Production
+                with CI/CD pipeline.
+              </li>
+              <li>Deployed user-friendly object browsing S3 alike storage system using containerized Kubernetes.</li>
+              <li>
+                <b>Tools:</b> Python, Flask, AWS, VS Code, Spanner, Jenkins, Anaconda
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>May 2012 - Aug 2012 | Seattle, Washignton</span>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.hsbc.com/" target="_blank"><img alt="HSBC logo" src="/assets/img/HSBC-Logo.png"
+                    class="responsive-img center-block" /></a>
+
+              </div>
+
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <a href="https://www.hsbc.com/" target="_blank" class="teal-text hoverline"> <span
+                      class="card-title"><a href="#experience" class="teal-text hoverline">HSBC</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Software Developer</div>
+            <ul>
+              <li>
+                TechStack : Java, Spring boot, JMS, SFTP, Python, Flask, Cucumber, Tosca, Jira, Jenkins, GCP, NLP,
+                xMatters, Swagger
+              </li>
+              <li>
+                Led a software development team to create self-service and automated solutions for cloud-delivered APIs.
+              </li>
+              <li>Developed microservices using Java for extracting data from ORMB, transforming into invoices and
+                sending to clients.</li>
+              <li>100% Successful rollout and Go-live with 0 error rate by integrating JUnit tests on the build process.
+              </li>
+              <li>Configured a complete CI/CD pipeline with automated GCP deployments, automated tests, and alert
+                monitoring system.</li>
+              <li>Increased security posture of Cloud services by resolving vulnerabilities identified via Netsparker
+                scan & Checkmarx.</li>
+              <li>Developed & integrated chatbot using Rasa framework on Symphony platform to provide user information.
+              </li>
+              <li>Implemented certificate reconciliation for Digital Ledger System using Artificial Intelligence and
+                Flask framework.</li>
+              <li>Designed & Implemented Android application prototype for online banking operations with Chatbot secure
+                access.</li>
+              <li>
+                <b>Tools:</b> Python, Flask, JavaScript, Swagger, STS Tool, Tosca, Linux, xMatter, GCP
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>July 2019 - Aug 2021 | Pune, Maharastra</span>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="/assets/img/bss.jpg" style="height: 100%; width: 100%"
+                  class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Booth Survelliance System<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A Voting system build with AI/ML for Face detection and user friendly platform to manage voting
+                  places.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Java, Spring boot, Hibernate, MySQL, Python, AI, HTML, React, JS, AWS</li>
+                  <li>Solved the issue of the voting system in rural areas due to lack of surveillance.</li>
+                  <li>System detects the unauthorized person in the booth if that person is not there in place and
+                    informed the supervisor.</li>
+                  <li> System has user-friendly front end by users can check the details regarding the booth as well as
+                    admin can add authorized person the specific booth and details about the booth.</li>
+                  <li>Built a Machine learning model on top of that, which counts the number of people in the booth and
+                    for capturing an unauthorized person in the booth.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/csu.jpeg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Color Schema Authentication<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  An addional layer in security for any application.
+                </p>
+              </div>
+              <div class="card-reveal">
+
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Java, JSP, Java Mail Servlet, HTML, JavaScript, CSS, MySQL</li>
+                  <li>Designed additional security layer with RGBY color codes for login feature with OTP for reset.
+                  </li>
+                  <li> User needs to input correct color code combination where the order of requested input shuffles on
+                    each page refresh.</li>
+                  <li>Implemented the application using Servlet, JSP, MySql for backend and HTML, CSS, JavaScript,
+                    Bootstrap in front end.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Flask Project -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of web app" src="/assets/img/tsa.jpeg" style="height: 100%; width: 100%"
+                  class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Twitter Sentimental Analysis<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A simple and extensible Analysis with Twitter API on Flask.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Python</li>
+                  <li>Analyzed top N tweets for a given user to predict positive, negative, or neutral sentiment and
+                    generate the report.</li>
+                  <li>Implemented using an NLP-based machine learning model in Python.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/java.png" class="responsive-img" />JAVA
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/go.png" class="responsive-img" />Go lang
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" />Shell Scripting
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Libraries</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" />OpenCV
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/django-logo.webp" class="responsive-img" />Django
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/flask-logo.png" class="responsive-img" />Flask
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/keras-logo.png" class="responsive-img" />Keras
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/gcplogo.png" class="responsive-img" />GCP
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seventh Section: Education -->
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://www.asu.edu/" target="_blank"
+                      class="teal-text hoverline">University of Texas at Dallas</a></span>
+                </p>
+                <p class="brown-text">Texas, USA</p>
+                <p>
+                  <b>Degree: </b>Master of Science in Computer Science
+                  <br>
+                  <b>GPA: </b>3.72/4.0
+                </p>
+
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <li>Distributed Database Systems</li>
+                    <li>Big Data</li>
+                    <li>Foundations of Algorithms</li>
+                    <li>Web designing</li>
+                    <li>Machine learning and AI</li>
+                  </ul>
+                  </p>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a
+                      href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/"
+                      target="_blank" class="teal-text hoverline">LDCE, Ahmedabad
+                    </a></span>
+                </p>
+                <p class="brown-text">Ahmedabad, India</p>
+                <p>
+                  <b>Degree: </b>Bachelor of Technology in Information Technology
+                  <br>
+                  <b>CGPA: </b>8.67/10
+                </p>
+
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Operating Systems</li>
+                    <li>Computer Network</li>
+                    <li>Data Mining</li>
+                    <li>Cyber Security</li>
+                  </ul>
+                  </p>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Certification" class="section scrollspy">
+      <h3 class="page-title white-text teal">Certification</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m4 10">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/GCPACE.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Google Cloud Platform - Associate Cloud Engineer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m4 10">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/PCAP.jpeg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">PCAP - (Python)</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col s12 m4 10">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/MTA.png">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Microsoft Technology Associate</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Call Yash" data-position="top" data-tooltip="Call Yash"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Yash">+19725618401</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Yash" href="mailto:yashnshah1997@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Yash" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Yash" href="mailto:yashnshah1997@gmail.com"
+              class="hoverline">yashnshah1997@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Yash" href="mailto:ynshah97@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Yash" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Yash" href="mailto:ynshah97@gmail.com"
+              class="hoverline">ynshah97@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Yash on GitHub" href="http://github.com/Yashshah97" target="_blank" data-position="top"
+            data-tooltip="View Yash on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Yash on Github" href="http://github.com/Yashshah97" class="hoverline"
+              target="_blank">github.com/Yashshah97</a></a>
+        </p>
+        <p>
+          <a aria-label="View Yash on LinkedIn" href="http://linkedin.com/in/shahyash97" target="_blank"
+            data-position="top" data-tooltip="View Yash Shah. on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Yash on LinkedIn" href="http://linkedin.com/in/shahyash97"
+              class="hoverline" target="_blank">linkedin.com/in/shahyash97</a></a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing', {
+      strings: ["Developer", "Fast Learner", "Diligent", "Passionate"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+    var typed2 = new Typed('.typing2', {
+      strings: ["Yash Shah."],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+
+
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
+
 </html>
