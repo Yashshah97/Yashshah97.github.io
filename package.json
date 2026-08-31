@@ -1,0 +1,38 @@
+{
+  "name": "yashshah-portfolio",
+  "version": "2.0.0",
+  "description": "Personal portfolio of Yash Shah — software engineer.",
+  "scripts": {
+    "dev": "vite",
+    "icons": "node scripts/gen-icons.mjs",
+    "prebuild": "rm -rf static",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yashshah97/Yashshah97.github.io.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Yashshah97/Yashshah97.github.io/issues"
+  },
+  "homepage": "https://github.com/Yashshah97/Yashshah97.github.io#readme",
+  "dependencies": {
+    "lucide-react": "^1.37.0",
+    "motion": "^13.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.1.1",
+    "simple-icons": "^16.29.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  },
+  "private": true
+}
